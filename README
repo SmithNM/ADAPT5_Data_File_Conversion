@@ -1,0 +1,14 @@
+README:
+
+This file is designed to take a wide data format consistant with how data is recorded 
+(especially with infectious disease pharmacodynamic work), and conver it into a format for use with ADAPT5. ADAPT5 is a free software 
+distributed by the BMSR at the University of Southern California. 
+
+The script is written in R and requires two input files: (1) a RAW_DATA file (contains the one or more measured dependent variables for each
+subject along with time-independent covariates) and (2) a Dosing_Information file (contains the bolus, infusion, or time-dependnet 
+covariates)
+
+
+N.B. The script will automatically create the Dosing Information File if one is not present. This feature has yet to be incorporated for the 
+creation of a skelton RAW_DATA file. The script can be run once again if no edits are required to the file, however it must be renamed to:
+<Dosing_Information_EDITED.csv>
